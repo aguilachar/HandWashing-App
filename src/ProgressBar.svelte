@@ -1,8 +1,8 @@
 <div bp="grid">
     <div bp="offset-5@md 4@md 12@sm" 
 class="progress-container">
-        <div class="progress-bar">
-            <span class="sr-only">%</span>
+        <div class="progress-bar" style="width: {progress}%;">
+            <span class="sr-only">%{progress}</span>
         </div>
     </div>
 
@@ -10,7 +10,6 @@ class="progress-container">
 
 <style>
 .progress-bar {
-    width: 20%;
     height: 30px;
     background-color: rgb(100, 186, 74);
 }
@@ -21,3 +20,8 @@ class="progress-container">
 }
 
 </style>
+
+<script>
+    export let progress = 0;
+
+</script>
